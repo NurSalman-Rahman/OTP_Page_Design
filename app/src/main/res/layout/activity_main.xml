@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:background="#930B31"
+    tools:context=".MainActivity">
+
+<TextView
+    android:padding="10dp"
+    android:layout_marginStart="10dp"
+    android:id="@+id/phoneid"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/password"
+    android:layout_width="150dp"
+    android:layout_height="180dp">
+</TextView>
+    <TextView
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:text="@string/please_enter"
+        android:id="@+id/textEnterid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:id="@+id/textmessegeid"
+
+        android:text="@string/the_vslidstion_code_thst_getr_from_sms"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+            <!--  pinview box  with dependency test 1 -->
+
+<!--
+<com.goodiebag.pinview.Pinview
+
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/pinview">
+
+</com.goodiebag.pinview.Pinview>
+-->
+
+           <!--   Without pinview (manual ) test 2 -->
+<!--    <LinearLayout
+
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:cursorVisible="true"
+        android:textCursorDrawable="@color/white"
+
+        android:layout_marginStart="5dp"
+        android:maxLength="1"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/inputCode1"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="auto"
+        android:inputType="number"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_width="50dp"
+        android:layout_height="55dp">
+
+    </EditText>
+
+
+
+    <EditText
+        android:cursorVisible="true"
+        android:textCursorDrawable="@color/white"
+        android:imeOptions="actionNext"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/inputCode2"
+        android:layout_marginStart="5dp"
+        android:importantForAutofill="auto"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        tools:ignore="LableFor">
+
+    </EditText>
+
+
+
+    <EditText
+        android:cursorVisible="true"
+        android:textCursorDrawable="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/inputCode3"
+        android:layout_marginStart="5dp"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="auto"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        tools:ignore="LableFor">
+
+    </EditText>
+
+
+    <EditText
+        android:cursorVisible="true"
+        android:textCursorDrawable="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/inputCode4"
+        android:layout_marginStart="5dp"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="auto"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        tools:ignore="LableFor">
+
+    </EditText>
+
+
+    </LinearLayout>-->
+
+
+
+          <!--Pinview with out box with dependance (task comple ) final -->
+
+    <com.alimuzaffar.lib.pin.PinEntryEditText
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/txt_pin_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="4"
+       android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        app:pinLineColors="@color/white" />
+
+</LinearLayout>
